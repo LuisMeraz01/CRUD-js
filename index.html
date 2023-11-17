@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+        <script src="https://cdn.tailwindcss.com"></script> 
+        <title>CRUD</title>
+    </head>
+    <body>
+        
+        <header class="titulo-header">
+            <div class="titulo-container">
+                <p>REGISTRO DE PRODUCTOS</p>
+            </div>
+
+        </header>
+
+        <section class="main-contenedor">
+
+            <div class="registros-contenedor"> <!-- SECCION DE REGISTRO LA INFORMACION DE LOS PRODUCTOS-->
+
+                <p class="titulos">Informacion del producto</p>
+                <form id="#formulario" autocomplete="off">
+                    <div class="inputs-container">  
+                        
+                        <div>
+                            <p class="text-white">Nombre del producto</p>
+                            <input class="pl-1 text-sm" type="text" id="nombre">
+                        </div>
+                        <div>
+                            <p class="mt-5 text-white">Precio</p>
+                            <input class="pl-1 text-sm" type="text" id="precio">
+                        </div>
+                        <div>
+                            <p class="mt-5 text-white">Cantidad</p>
+                            <input class="pl-1 text-sm" type="text" id="cantidad">
+                        </div>
+                        <div>
+                            <p class="mt-5 text-white">Categoria</p>
+                            <input class="pl-1 text-sm" type="text" id="categoria">
+                        </div>
+                                               
+                    </div>
+
+                    <div class="btn-container">    
+                        <button id="agregar" class="bg-black text-white p-3 mt-3 opacity-50 cursor-not-allowed" disabled>Agregar</button>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="tabla-contenedor"> <!-- SECCION DE TABLA CON LA INFORMACION DE LOS PRODUCTOS-->
+
+                <p class="titulos">Lista de productos</p>
+                <div class="table-container">
+
+                    <table class="table">
+
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Categoria</th>
+                                                                
+                            </tr>
+                        </thead>
+                        <tbody class="registros-container">
+
+                                   
+
+                        </tbody> <!-- Seccion para inyectar los productos creados-->
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <script src="app.js"></script>
+
+    </body>
+    
+</html>
